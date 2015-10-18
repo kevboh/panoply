@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B026DDEB1BD3C1700010529D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DDEA1BD3C1700010529D /* AppDelegate.swift */; };
+		B026DDED1BD3C1700010529D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DDEC1BD3C1700010529D /* ViewController.swift */; };
+		B026DDF01BD3C1700010529D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B026DDEE1BD3C1700010529D /* Main.storyboard */; };
+		B026DDF21BD3C1700010529D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B026DDF11BD3C1700010529D /* Assets.xcassets */; };
+		B026DDF51BD3C1700010529D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B026DDF31BD3C1700010529D /* LaunchScreen.storyboard */; };
+		B026DE001BD3C1700010529D /* PanoplyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DDFF1BD3C1700010529D /* PanoplyTests.swift */; };
+		B026DE0B1BD3C1700010529D /* PanoplyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE0A1BD3C1700010529D /* PanoplyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B026DDFC1BD3C1700010529D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B026DDDF1BD3C1700010529D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B026DDE61BD3C1700010529D;
+			remoteInfo = Panoply;
+		};
+		B026DE071BD3C1700010529D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B026DDDF1BD3C1700010529D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B026DDE61BD3C1700010529D;
+			remoteInfo = Panoply;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B026DDE71BD3C1700010529D /* Panoply.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Panoply.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B026DDEA1BD3C1700010529D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B026DDEC1BD3C1700010529D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B026DDEF1BD3C1700010529D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B026DDF11BD3C1700010529D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B026DDF41BD3C1700010529D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B026DDF61BD3C1700010529D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B026DDFB1BD3C1700010529D /* PanoplyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanoplyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B026DDFF1BD3C1700010529D /* PanoplyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoplyTests.swift; sourceTree = "<group>"; };
+		B026DE011BD3C1700010529D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B026DE061BD3C1700010529D /* PanoplyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanoplyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B026DE0A1BD3C1700010529D /* PanoplyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoplyUITests.swift; sourceTree = "<group>"; };
+		B026DE0C1BD3C1700010529D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B026DDE41BD3C1700010529D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B026DDF81BD3C1700010529D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B026DE031BD3C1700010529D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B026DDDE1BD3C1700010529D = {
+			isa = PBXGroup;
+			children = (
+				B026DDE91BD3C1700010529D /* Panoply */,
+				B026DDFE1BD3C1700010529D /* PanoplyTests */,
+				B026DE091BD3C1700010529D /* PanoplyUITests */,
+				B026DDE81BD3C1700010529D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B026DDE81BD3C1700010529D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B026DDE71BD3C1700010529D /* Panoply.app */,
+				B026DDFB1BD3C1700010529D /* PanoplyTests.xctest */,
+				B026DE061BD3C1700010529D /* PanoplyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B026DDE91BD3C1700010529D /* Panoply */ = {
+			isa = PBXGroup;
+			children = (
+				B026DDEA1BD3C1700010529D /* AppDelegate.swift */,
+				B026DDEC1BD3C1700010529D /* ViewController.swift */,
+				B026DDEE1BD3C1700010529D /* Main.storyboard */,
+				B026DDF11BD3C1700010529D /* Assets.xcassets */,
+				B026DDF31BD3C1700010529D /* LaunchScreen.storyboard */,
+				B026DDF61BD3C1700010529D /* Info.plist */,
+			);
+			path = Panoply;
+			sourceTree = "<group>";
+		};
+		B026DDFE1BD3C1700010529D /* PanoplyTests */ = {
+			isa = PBXGroup;
+			children = (
+				B026DDFF1BD3C1700010529D /* PanoplyTests.swift */,
+				B026DE011BD3C1700010529D /* Info.plist */,
+			);
+			path = PanoplyTests;
+			sourceTree = "<group>";
+		};
+		B026DE091BD3C1700010529D /* PanoplyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B026DE0A1BD3C1700010529D /* PanoplyUITests.swift */,
+				B026DE0C1BD3C1700010529D /* Info.plist */,
+			);
+			path = PanoplyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B026DDE61BD3C1700010529D /* Panoply */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B026DE0F1BD3C1700010529D /* Build configuration list for PBXNativeTarget "Panoply" */;
+			buildPhases = (
+				B026DDE31BD3C1700010529D /* Sources */,
+				B026DDE41BD3C1700010529D /* Frameworks */,
+				B026DDE51BD3C1700010529D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Panoply;
+			productName = Panoply;
+			productReference = B026DDE71BD3C1700010529D /* Panoply.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B026DDFA1BD3C1700010529D /* PanoplyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B026DE121BD3C1700010529D /* Build configuration list for PBXNativeTarget "PanoplyTests" */;
+			buildPhases = (
+				B026DDF71BD3C1700010529D /* Sources */,
+				B026DDF81BD3C1700010529D /* Frameworks */,
+				B026DDF91BD3C1700010529D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B026DDFD1BD3C1700010529D /* PBXTargetDependency */,
+			);
+			name = PanoplyTests;
+			productName = PanoplyTests;
+			productReference = B026DDFB1BD3C1700010529D /* PanoplyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B026DE051BD3C1700010529D /* PanoplyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B026DE151BD3C1700010529D /* Build configuration list for PBXNativeTarget "PanoplyUITests" */;
+			buildPhases = (
+				B026DE021BD3C1700010529D /* Sources */,
+				B026DE031BD3C1700010529D /* Frameworks */,
+				B026DE041BD3C1700010529D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B026DE081BD3C1700010529D /* PBXTargetDependency */,
+			);
+			name = PanoplyUITests;
+			productName = PanoplyUITests;
+			productReference = B026DE061BD3C1700010529D /* PanoplyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B026DDDF1BD3C1700010529D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Postlight;
+				TargetAttributes = {
+					B026DDE61BD3C1700010529D = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					B026DDFA1BD3C1700010529D = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = B026DDE61BD3C1700010529D;
+					};
+					B026DE051BD3C1700010529D = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = B026DDE61BD3C1700010529D;
+					};
+				};
+			};
+			buildConfigurationList = B026DDE21BD3C1700010529D /* Build configuration list for PBXProject "Panoply" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B026DDDE1BD3C1700010529D;
+			productRefGroup = B026DDE81BD3C1700010529D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B026DDE61BD3C1700010529D /* Panoply */,
+				B026DDFA1BD3C1700010529D /* PanoplyTests */,
+				B026DE051BD3C1700010529D /* PanoplyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B026DDE51BD3C1700010529D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B026DDF51BD3C1700010529D /* LaunchScreen.storyboard in Resources */,
+				B026DDF21BD3C1700010529D /* Assets.xcassets in Resources */,
+				B026DDF01BD3C1700010529D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B026DDF91BD3C1700010529D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B026DE041BD3C1700010529D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B026DDE31BD3C1700010529D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B026DDED1BD3C1700010529D /* ViewController.swift in Sources */,
+				B026DDEB1BD3C1700010529D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B026DDF71BD3C1700010529D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B026DE001BD3C1700010529D /* PanoplyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B026DE021BD3C1700010529D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B026DE0B1BD3C1700010529D /* PanoplyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B026DDFD1BD3C1700010529D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B026DDE61BD3C1700010529D /* Panoply */;
+			targetProxy = B026DDFC1BD3C1700010529D /* PBXContainerItemProxy */;
+		};
+		B026DE081BD3C1700010529D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B026DDE61BD3C1700010529D /* Panoply */;
+			targetProxy = B026DE071BD3C1700010529D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B026DDEE1BD3C1700010529D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B026DDEF1BD3C1700010529D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B026DDF31BD3C1700010529D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B026DDF41BD3C1700010529D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B026DE0D1BD3C1700010529D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B026DE0E1BD3C1700010529D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B026DE101BD3C1700010529D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Panoply/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.postlight.Panoply;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B026DE111BD3C1700010529D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Panoply/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.postlight.Panoply;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B026DE131BD3C1700010529D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PanoplyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.postlight.PanoplyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panoply.app/Panoply";
+			};
+			name = Debug;
+		};
+		B026DE141BD3C1700010529D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PanoplyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.postlight.PanoplyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panoply.app/Panoply";
+			};
+			name = Release;
+		};
+		B026DE161BD3C1700010529D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PanoplyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.postlight.PanoplyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Panoply;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B026DE171BD3C1700010529D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PanoplyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.postlight.PanoplyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Panoply;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B026DDE21BD3C1700010529D /* Build configuration list for PBXProject "Panoply" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B026DE0D1BD3C1700010529D /* Debug */,
+				B026DE0E1BD3C1700010529D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B026DE0F1BD3C1700010529D /* Build configuration list for PBXNativeTarget "Panoply" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B026DE101BD3C1700010529D /* Debug */,
+				B026DE111BD3C1700010529D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B026DE121BD3C1700010529D /* Build configuration list for PBXNativeTarget "PanoplyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B026DE131BD3C1700010529D /* Debug */,
+				B026DE141BD3C1700010529D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B026DE151BD3C1700010529D /* Build configuration list for PBXNativeTarget "PanoplyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B026DE161BD3C1700010529D /* Debug */,
+				B026DE171BD3C1700010529D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B026DDDF1BD3C1700010529D /* Project object */;
+}
