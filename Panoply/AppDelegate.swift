@@ -15,12 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        let search = FlickrSearch(term: "test")
-        search.go() { album in
-            
-        }
-        
         return true
     }
 

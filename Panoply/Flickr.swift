@@ -12,6 +12,7 @@ import Keys
 
 enum Flickr {
     case Search(String)
+    case Photo(NSURL)
 }
 
 extension Flickr : MoyaTarget {
@@ -27,11 +28,20 @@ extension Flickr : MoyaTarget {
         return .GET
     }
     
+    var urlString: String {
+        switch self {
+        case .Search: return baseURL.URLByAppendingPathComponent(path).absoluteString
+        case .Photo(let url): return url.absoluteString
+        }
+    }
+    
     var parameters: [String: AnyObject]? {
         switch self {
         case .Search(let term):
             let text = term.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet()) ?? ""
             return ["method" : "flickr.photos.search", "text" : text]
+        default:
+            return [:]
         }
     }
     
@@ -42,6 +52,9 @@ extension Flickr : MoyaTarget {
             // isn't available, since that would indicate that something is terribly, horribly wrong.
             let file = NSBundle().pathForResource("search-test", ofType: "json")!
             return NSData(contentsOfFile: file)!
+        case .Photo:
+            // TODO: Replace with real photo
+            return NSData()
         }
     }
 }
@@ -69,7 +82,7 @@ private struct DefaultMoyaProvider {
         parameters["extras"] = "owner_name,url_m"
         // TODO: url extra here?
         
-        return Endpoint<Flickr>(URL: DefaultMoyaProvider.url(target),
+        return Endpoint<Flickr>(URL: target.urlString,
             sampleResponseClosure: { DefaultMoyaProvider.sampleReponseForTarget(target) },
             method: target.method,
             parameters: parameters)
@@ -77,9 +90,5 @@ private struct DefaultMoyaProvider {
     
     private static func sampleReponseForTarget(target: MoyaTarget) -> EndpointSampleResponse {
         return EndpointSampleResponse.NetworkResponse(200, target.sampleData)
-    }
-    
-    private static func url(route: MoyaTarget) -> String {
-        return route.baseURL.URLByAppendingPathComponent(route.path).absoluteString
     }
 }

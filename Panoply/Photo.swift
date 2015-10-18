@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import Moya
 
 //"id": "22249325526",
 //"owner": "53894703@N02",
@@ -41,6 +42,23 @@ struct Photo {
         self.url = url
         self.title = json[.Title].string
         self.ownerName = json[.OwnerName].string
+    }
+}
+
+extension Photo : FlickrConsumer {
+    func getImage(completion: Result<UIImage> -> ()) -> Cancellable {
+        return provider.request(.Photo(url)) { data, statusCode, response, error in
+            if let data = data, image = UIImage(data: data) {
+                completion(Result(image))
+            }
+            else {
+                let completionError = error ??
+                    NSError(domain: "com.postlight.panoply",
+                        code: 0,
+                        userInfo: [NSLocalizedDescriptionKey : "Unable to parse photo response."])
+                completion(Result(completionError))
+            }
+        }
     }
 }
 

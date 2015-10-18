@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import Moya
 
 /// A search on Flickr for a specific term.
 struct FlickrSearch : FlickrConsumer {
@@ -16,8 +17,8 @@ struct FlickrSearch : FlickrConsumer {
     
     /// Execute the search against Flickr.
     /// - parameter completion: The completion handler for the search.
-    func go(completion: (Result<Album>) -> ()) {
-        provider.request(.Search(term)) { data, statusCode, response, error in
+    func get(completion: (Result<Album>) -> ()) -> Cancellable {
+        return provider.request(.Search(term)) { data, statusCode, response, error in
             if let data = data {
                 let json = JSON(data: data)
                 print(json)

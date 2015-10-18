@@ -1,42 +1,98 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4nX-se-3Xh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Sru-Ef-vzq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
-        <scene sceneID="VWw-Fu-wdy">
+        <!--Panoply-->
+        <scene sceneID="bp0-J2-sPo">
             <objects>
-                <collectionViewController id="4nX-se-3Xh" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="URB-Zg-r4f">
+                <tableViewController id="Ayv-Te-jmX" customClass="PhotosTableViewController" customModule="Panoply" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="u4V-4J-qfG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZOt-0P-tXl">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="S5C-YO-E6t">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PhotoCellReuseIdentifier" rowHeight="200" id="GgV-pf-XTA" customClass="PhotoCell" customModule="Panoply" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GgV-pf-XTA" id="JTf-E8-WMl">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rfk-ii-Xeg">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O09-sB-TtH" customClass="PhotoCellGradientView" customModule="Panoply" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Photo Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZK-pZ-UtV">
+                                            <rect key="frame" x="8" y="138" width="584" height="20"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Photo Owner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egE-iJ-0La">
+                                            <rect key="frame" x="8" y="166" width="584" height="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="egE-iJ-0La" firstAttribute="leading" secondItem="6ZK-pZ-UtV" secondAttribute="leading" id="Cg9-Mm-PZI"/>
+                                        <constraint firstItem="rfk-ii-Xeg" firstAttribute="top" secondItem="JTf-E8-WMl" secondAttribute="top" id="ILx-42-zlP"/>
+                                        <constraint firstItem="egE-iJ-0La" firstAttribute="trailing" secondItem="6ZK-pZ-UtV" secondAttribute="trailing" id="ILx-rE-p6e"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="egE-iJ-0La" secondAttribute="bottom" constant="8" id="V5x-yN-g5k"/>
+                                        <constraint firstAttribute="bottom" secondItem="rfk-ii-Xeg" secondAttribute="bottom" id="WPL-Fg-mGt"/>
+                                        <constraint firstItem="6ZK-pZ-UtV" firstAttribute="leading" secondItem="JTf-E8-WMl" secondAttribute="leadingMargin" id="Y3A-xG-EWd"/>
+                                        <constraint firstItem="6ZK-pZ-UtV" firstAttribute="trailing" secondItem="JTf-E8-WMl" secondAttribute="trailingMargin" id="ceY-bN-Dxr"/>
+                                        <constraint firstAttribute="trailing" secondItem="O09-sB-TtH" secondAttribute="trailing" id="ixa-A7-bFq"/>
+                                        <constraint firstItem="egE-iJ-0La" firstAttribute="top" secondItem="6ZK-pZ-UtV" secondAttribute="bottom" constant="8" symbolic="YES" id="kX8-ll-kjU"/>
+                                        <constraint firstAttribute="bottom" secondItem="O09-sB-TtH" secondAttribute="bottom" id="mgS-hq-1bA"/>
+                                        <constraint firstAttribute="trailing" secondItem="rfk-ii-Xeg" secondAttribute="trailing" id="ocH-7M-aUO"/>
+                                        <constraint firstItem="rfk-ii-Xeg" firstAttribute="leading" secondItem="JTf-E8-WMl" secondAttribute="leading" id="rLB-7D-Edd"/>
+                                        <constraint firstItem="O09-sB-TtH" firstAttribute="leading" secondItem="JTf-E8-WMl" secondAttribute="leading" id="zGP-nK-NPh"/>
+                                        <constraint firstItem="O09-sB-TtH" firstAttribute="top" secondItem="JTf-E8-WMl" secondAttribute="top" id="zSq-Zo-wbi"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ownerLabel" destination="egE-iJ-0La" id="jnU-ZV-amL"/>
+                                    <outlet property="photoImageView" destination="rfk-ii-Xeg" id="vFu-6V-QVr"/>
+                                    <outlet property="titleLabel" destination="6ZK-pZ-UtV" id="Ccd-iO-lrO"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="4nX-se-3Xh" id="f5P-xg-OUm"/>
-                            <outlet property="delegate" destination="4nX-se-3Xh" id="UaN-DQ-i4F"/>
+                            <outlet property="dataSource" destination="Ayv-Te-jmX" id="B5h-wU-Zgh"/>
+                            <outlet property="delegate" destination="Ayv-Te-jmX" id="KDb-ub-ktv"/>
                         </connections>
-                    </collectionView>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hFB-L8-yrn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Panoply" id="wMU-wl-u1X"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FmS-XL-sG8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="502" y="487"/>
+            <point key="canvasLocation" x="1386" y="531"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rym-dx-np6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sru-Ef-vzq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Xu-8o-HQe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ayv-Te-jmX" kind="relationship" relationship="rootViewController" id="QsO-8N-1Ts"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kht-h2-1xI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="574" y="531"/>
         </scene>
     </scenes>
 </document>
