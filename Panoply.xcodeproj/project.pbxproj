@@ -10,12 +10,17 @@
 		041C3DA16793B192763F8D89 /* Pods_Panoply.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C273F554C18F7B11A3AF81 /* Pods_Panoply.framework */; };
 		713C5D5BAFA16FC9FA0F4B32 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57E1372178CC4C2A674E772 /* Pods.framework */; };
 		B026DDEB1BD3C1700010529D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DDEA1BD3C1700010529D /* AppDelegate.swift */; };
-		B026DDED1BD3C1700010529D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DDEC1BD3C1700010529D /* ViewController.swift */; };
 		B026DDF01BD3C1700010529D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B026DDEE1BD3C1700010529D /* Main.storyboard */; };
 		B026DDF21BD3C1700010529D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B026DDF11BD3C1700010529D /* Assets.xcassets */; };
 		B026DDF51BD3C1700010529D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B026DDF31BD3C1700010529D /* LaunchScreen.storyboard */; };
 		B026DE001BD3C1700010529D /* PanoplyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DDFF1BD3C1700010529D /* PanoplyTests.swift */; };
 		B026DE0B1BD3C1700010529D /* PanoplyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE0A1BD3C1700010529D /* PanoplyUITests.swift */; };
+		B026DE1A1BD3DF740010529D /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE191BD3DF740010529D /* Flickr.swift */; settings = {ASSET_TAGS = (); }; };
+		B026DE1D1BD3E1D00010529D /* search-test.json in Resources */ = {isa = PBXBuildFile; fileRef = B026DE1C1BD3E1D00010529D /* search-test.json */; settings = {ASSET_TAGS = (); }; };
+		B026DE1F1BD3E50F0010529D /* FlickrSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE1E1BD3E50F0010529D /* FlickrSearch.swift */; settings = {ASSET_TAGS = (); }; };
+		B026DE211BD3EC8C0010529D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE201BD3EC8C0010529D /* Photo.swift */; settings = {ASSET_TAGS = (); }; };
+		B026DE231BD3F24F0010529D /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE221BD3F24F0010529D /* Album.swift */; settings = {ASSET_TAGS = (); }; };
+		B026DE251BD3F4860010529D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE241BD3F4860010529D /* Result.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +46,6 @@
 		A57E1372178CC4C2A674E772 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B026DDE71BD3C1700010529D /* Panoply.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Panoply.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B026DDEA1BD3C1700010529D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B026DDEC1BD3C1700010529D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B026DDEF1BD3C1700010529D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B026DDF11BD3C1700010529D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B026DDF41BD3C1700010529D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +56,12 @@
 		B026DE061BD3C1700010529D /* PanoplyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanoplyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B026DE0A1BD3C1700010529D /* PanoplyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoplyUITests.swift; sourceTree = "<group>"; };
 		B026DE0C1BD3C1700010529D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B026DE191BD3DF740010529D /* Flickr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flickr.swift; sourceTree = "<group>"; };
+		B026DE1C1BD3E1D00010529D /* search-test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-test.json"; sourceTree = "<group>"; };
+		B026DE1E1BD3E50F0010529D /* FlickrSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrSearch.swift; sourceTree = "<group>"; };
+		B026DE201BD3EC8C0010529D /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		B026DE221BD3F24F0010529D /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		B026DE241BD3F4860010529D /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		B29F719089E2F78E4A93B48F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,12 +135,17 @@
 		B026DDE91BD3C1700010529D /* Panoply */ = {
 			isa = PBXGroup;
 			children = (
+				B026DE221BD3F24F0010529D /* Album.swift */,
 				B026DDEA1BD3C1700010529D /* AppDelegate.swift */,
-				B026DDEC1BD3C1700010529D /* ViewController.swift */,
-				B026DDEE1BD3C1700010529D /* Main.storyboard */,
 				B026DDF11BD3C1700010529D /* Assets.xcassets */,
-				B026DDF31BD3C1700010529D /* LaunchScreen.storyboard */,
+				B026DE191BD3DF740010529D /* Flickr.swift */,
+				B026DE1E1BD3E50F0010529D /* FlickrSearch.swift */,
 				B026DDF61BD3C1700010529D /* Info.plist */,
+				B026DDF31BD3C1700010529D /* LaunchScreen.storyboard */,
+				B026DDEE1BD3C1700010529D /* Main.storyboard */,
+				B026DE201BD3EC8C0010529D /* Photo.swift */,
+				B026DE241BD3F4860010529D /* Result.swift */,
+				B026DE1B1BD3E1B10010529D /* Sample Data */,
 			);
 			path = Panoply;
 			sourceTree = "<group>";
@@ -151,6 +166,14 @@
 				B026DE0C1BD3C1700010529D /* Info.plist */,
 			);
 			path = PanoplyUITests;
+			sourceTree = "<group>";
+		};
+		B026DE1B1BD3E1B10010529D /* Sample Data */ = {
+			isa = PBXGroup;
+			children = (
+				B026DE1C1BD3E1D00010529D /* search-test.json */,
+			);
+			name = "Sample Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B026DE1D1BD3E1D00010529D /* search-test.json in Resources */,
 				B026DDF51BD3C1700010529D /* LaunchScreen.storyboard in Resources */,
 				B026DDF21BD3C1700010529D /* Assets.xcassets in Resources */,
 				B026DDF01BD3C1700010529D /* Main.storyboard in Resources */,
@@ -334,8 +358,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B026DDED1BD3C1700010529D /* ViewController.swift in Sources */,
+				B026DE1A1BD3DF740010529D /* Flickr.swift in Sources */,
+				B026DE1F1BD3E50F0010529D /* FlickrSearch.swift in Sources */,
 				B026DDEB1BD3C1700010529D /* AppDelegate.swift in Sources */,
+				B026DE251BD3F4860010529D /* Result.swift in Sources */,
+				B026DE211BD3EC8C0010529D /* Photo.swift in Sources */,
+				B026DE231BD3F24F0010529D /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

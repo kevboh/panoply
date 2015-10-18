@@ -7,6 +7,7 @@ plugin 'cocoapods-keys', {
 }
 
 pod 'Moya'
+pod 'SwiftyJSON'
 
 target 'Panoply' do
 
