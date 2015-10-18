@@ -9,6 +9,8 @@
 import Foundation
 import SwiftyJSON
 
+let DefaultAlbumTerm = "Postlight"
+
 /// A collection of Flickr photos.
 struct Album {
     /// The Photos in this album.

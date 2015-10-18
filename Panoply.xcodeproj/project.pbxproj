@@ -24,6 +24,7 @@
 		B026DE2D1BD4349A0010529D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE2C1BD4349A0010529D /* PhotoCell.swift */; settings = {ASSET_TAGS = (); }; };
 		B026DE2F1BD434F80010529D /* PhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE2E1BD434F80010529D /* PhotosTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B026DE311BD435240010529D /* PhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE301BD435240010529D /* PhotosDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		B026DE331BD4412A0010529D /* AlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE321BD4412A0010529D /* AlbumTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		B026DE2C1BD4349A0010529D /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		B026DE2E1BD434F80010529D /* PhotosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosTableViewController.swift; sourceTree = "<group>"; };
 		B026DE301BD435240010529D /* PhotosDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosDataSource.swift; sourceTree = "<group>"; };
+		B026DE321BD4412A0010529D /* AlbumTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumTableViewController.swift; sourceTree = "<group>"; };
 		B29F719089E2F78E4A93B48F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				B026DE221BD3F24F0010529D /* Album.swift */,
+				B026DE321BD4412A0010529D /* AlbumTableViewController.swift */,
 				B026DDEA1BD3C1700010529D /* AppDelegate.swift */,
 				B026DDF11BD3C1700010529D /* Assets.xcassets */,
 				B026DE191BD3DF740010529D /* Flickr.swift */,
@@ -374,6 +377,7 @@
 				B026DE251BD3F4860010529D /* Result.swift in Sources */,
 				B026DE211BD3EC8C0010529D /* Photo.swift in Sources */,
 				B026DE2F1BD434F80010529D /* PhotosTableViewController.swift in Sources */,
+				B026DE331BD4412A0010529D /* AlbumTableViewController.swift in Sources */,
 				B026DE231BD3F24F0010529D /* Album.swift in Sources */,
 				B026DE311BD435240010529D /* PhotosDataSource.swift in Sources */,
 			);

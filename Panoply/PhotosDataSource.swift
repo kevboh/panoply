@@ -41,6 +41,7 @@ class PhotosDataSource : NSObject, UITableViewDataSource {
     func setWithSearch(search: FlickrSearch) {
         // Cancel any pending search
         cancelToken?.cancel()
+        album = Album()
         
         callback(isLoading: true)
         
@@ -49,8 +50,7 @@ class PhotosDataSource : NSObject, UITableViewDataSource {
                 self.album = album
             }
             else {
-                // If I had time I'd report an error here.
-                self.album = Album()
+                // TODO: If I had time I'd report an error here.
             }
             self.callback(isLoading: false)
         }

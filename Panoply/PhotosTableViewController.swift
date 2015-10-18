@@ -11,12 +11,27 @@ import UIKit
 /// A view controller that displays a list of photos.
 class PhotosTableViewController: UITableViewController {
     private lazy var dataSource : PhotosDataSource = {
+        // Create our data source.
+        // The initializing callback is called whenever the source changes.
         let dataSource = PhotosDataSource { isLoading in
-            // TODO: show spinner if loading
+            // Reset the spinner.
+            self.spinner.removeFromSuperview()
+            
+            // If we're loading, show the spinner.
+            if isLoading {
+                self.view.addSubview(self.spinner)
+                self.spinner.center = self.view.center
+                self.spinner.startAnimating()
+            }
+            
+            // Refresh the view. If loading, hide separators.
+            self.tableView.separatorStyle = isLoading ? .None : .SingleLine
             self.tableView.reloadData()
         }
         return dataSource
     }()
+    
+    private let spinner = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +43,21 @@ class PhotosTableViewController: UITableViewController {
          self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         tableView.dataSource = dataSource
-        dataSource.setWithSearch(FlickrSearch(term: "Kevin"))
+        dataSource.setWithSearch(FlickrSearch(term: DefaultAlbumTerm.lowercaseString))
+        self.title = DefaultAlbumTerm
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let albumViewController = segue.destinationViewController as? AlbumTableViewController {
+            albumViewController.didSelectSearchCallback = { title, search in
+                self.title = title
+                self.dataSource.setWithSearch(search)
+            }
+        }
     }
 }

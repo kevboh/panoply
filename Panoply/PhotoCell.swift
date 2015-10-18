@@ -59,7 +59,7 @@ class PhotoCellGradientView : UIView {
         if let gradientLayer = layer as? CAGradientLayer {
             gradientLayer.colors = [
                 UIColor.clearColor().CGColor,
-                UIColor.blackColor().colorWithAlphaComponent(0.2).CGColor
+                UIColor.blackColor().colorWithAlphaComponent(0.4).CGColor
             ]
         }
     }
