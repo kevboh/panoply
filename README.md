@@ -5,6 +5,7 @@ Install dependencies:
 
 ```swift
 gem install cocoapods
+gem install cocoapods-keys
 pod install
 ```
 
