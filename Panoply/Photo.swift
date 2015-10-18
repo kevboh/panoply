@@ -47,7 +47,7 @@ struct Photo {
 
 extension Photo : FlickrConsumer {
     func getImage(completion: Result<UIImage> -> ()) -> Cancellable {
-        return provider.request(.Photo(url)) { data, statusCode, response, error in
+        return flickr.request(.Photo(url)) { data, statusCode, response, error in
             if let data = data, image = UIImage(data: data) {
                 completion(Result(image))
             }

@@ -18,10 +18,9 @@ struct FlickrSearch : FlickrConsumer {
     /// Execute the search against Flickr.
     /// - parameter completion: The completion handler for the search.
     func get(completion: (Result<Album>) -> ()) -> Cancellable {
-        return provider.request(.Search(term)) { data, statusCode, response, error in
+        return flickr.request(.Search(term)) { data, statusCode, response, error in
             if let data = data {
                 let json = JSON(data: data)
-                print(json)
                 if let album = Album(json: json["photos"]) {
                     completion(Result(album))
                 }
