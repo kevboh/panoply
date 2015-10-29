@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		041C3DA16793B192763F8D89 /* Pods_Panoply.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C273F554C18F7B11A3AF81 /* Pods_Panoply.framework */; };
 		713C5D5BAFA16FC9FA0F4B32 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57E1372178CC4C2A674E772 /* Pods.framework */; };
+		B01E47481BE2E42A0013AF19 /* postlight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B01E47471BE2E42A0013AF19 /* postlight.jpg */; };
 		B026DDEB1BD3C1700010529D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DDEA1BD3C1700010529D /* AppDelegate.swift */; };
 		B026DDF01BD3C1700010529D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B026DDEE1BD3C1700010529D /* Main.storyboard */; };
 		B026DDF21BD3C1700010529D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B026DDF11BD3C1700010529D /* Assets.xcassets */; };
 		B026DDF51BD3C1700010529D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B026DDF31BD3C1700010529D /* LaunchScreen.storyboard */; };
 		B026DE001BD3C1700010529D /* PanoplyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DDFF1BD3C1700010529D /* PanoplyTests.swift */; };
 		B026DE0B1BD3C1700010529D /* PanoplyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE0A1BD3C1700010529D /* PanoplyUITests.swift */; };
-		B026DE1A1BD3DF740010529D /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE191BD3DF740010529D /* Flickr.swift */; settings = {ASSET_TAGS = (); }; };
-		B026DE1D1BD3E1D00010529D /* search-test.json in Resources */ = {isa = PBXBuildFile; fileRef = B026DE1C1BD3E1D00010529D /* search-test.json */; settings = {ASSET_TAGS = (); }; };
-		B026DE1F1BD3E50F0010529D /* FlickrSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE1E1BD3E50F0010529D /* FlickrSearch.swift */; settings = {ASSET_TAGS = (); }; };
-		B026DE211BD3EC8C0010529D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE201BD3EC8C0010529D /* Photo.swift */; settings = {ASSET_TAGS = (); }; };
-		B026DE231BD3F24F0010529D /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE221BD3F24F0010529D /* Album.swift */; settings = {ASSET_TAGS = (); }; };
-		B026DE251BD3F4860010529D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE241BD3F4860010529D /* Result.swift */; settings = {ASSET_TAGS = (); }; };
-		B026DE2D1BD4349A0010529D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE2C1BD4349A0010529D /* PhotoCell.swift */; settings = {ASSET_TAGS = (); }; };
-		B026DE2F1BD434F80010529D /* PhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE2E1BD434F80010529D /* PhotosTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B026DE311BD435240010529D /* PhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE301BD435240010529D /* PhotosDataSource.swift */; settings = {ASSET_TAGS = (); }; };
-		B026DE331BD4412A0010529D /* AlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE321BD4412A0010529D /* AlbumTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B026DE351BD446B60010529D /* postlight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B026DE341BD446B60010529D /* postlight.jpg */; settings = {ASSET_TAGS = (); }; };
+		B026DE1A1BD3DF740010529D /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE191BD3DF740010529D /* Flickr.swift */; };
+		B026DE1D1BD3E1D00010529D /* search-test.json in Resources */ = {isa = PBXBuildFile; fileRef = B026DE1C1BD3E1D00010529D /* search-test.json */; };
+		B026DE1F1BD3E50F0010529D /* FlickrSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE1E1BD3E50F0010529D /* FlickrSearch.swift */; };
+		B026DE211BD3EC8C0010529D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE201BD3EC8C0010529D /* Photo.swift */; };
+		B026DE231BD3F24F0010529D /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE221BD3F24F0010529D /* Album.swift */; };
+		B026DE251BD3F4860010529D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE241BD3F4860010529D /* Result.swift */; };
+		B026DE2D1BD4349A0010529D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE2C1BD4349A0010529D /* PhotoCell.swift */; };
+		B026DE2F1BD434F80010529D /* PhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE2E1BD434F80010529D /* PhotosTableViewController.swift */; };
+		B026DE311BD435240010529D /* PhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE301BD435240010529D /* PhotosDataSource.swift */; };
+		B026DE331BD4412A0010529D /* AlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026DE321BD4412A0010529D /* AlbumTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +49,7 @@
 		59C273F554C18F7B11A3AF81 /* Pods_Panoply.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panoply.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2DAF440174ABA3AC07C24C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A57E1372178CC4C2A674E772 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01E47471BE2E42A0013AF19 /* postlight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = postlight.jpg; sourceTree = "<group>"; };
 		B026DDE71BD3C1700010529D /* Panoply.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Panoply.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B026DDEA1BD3C1700010529D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B026DDEF1BD3C1700010529D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		B026DE2E1BD434F80010529D /* PhotosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosTableViewController.swift; sourceTree = "<group>"; };
 		B026DE301BD435240010529D /* PhotosDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosDataSource.swift; sourceTree = "<group>"; };
 		B026DE321BD4412A0010529D /* AlbumTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumTableViewController.swift; sourceTree = "<group>"; };
-		B026DE341BD446B60010529D /* postlight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = postlight.jpg; path = ../../../../Desktop/postlight.jpg; sourceTree = "<group>"; };
 		B29F719089E2F78E4A93B48F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,7 +185,7 @@
 		B026DE1B1BD3E1B10010529D /* Sample Data */ = {
 			isa = PBXGroup;
 			children = (
-				B026DE341BD446B60010529D /* postlight.jpg */,
+				B01E47471BE2E42A0013AF19 /* postlight.jpg */,
 				B026DE1C1BD3E1D00010529D /* search-test.json */,
 			);
 			name = "Sample Data";
@@ -297,7 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B026DE351BD446B60010529D /* postlight.jpg in Resources */,
+				B01E47481BE2E42A0013AF19 /* postlight.jpg in Resources */,
 				B026DE1D1BD3E1D00010529D /* search-test.json in Resources */,
 				B026DDF51BD3C1700010529D /* LaunchScreen.storyboard in Resources */,
 				B026DDF21BD3C1700010529D /* Assets.xcassets in Resources */,
